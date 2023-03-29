@@ -40,3 +40,29 @@ function update() {
     return time.length < 2 ? "0" + time : time;
   }
 }
+const img = document.getElementById("target");
+
+const generateImg = () => {
+  fetch("https://aws.random.cat/meow")
+    .then((res) => {
+      return res.json();
+    })
+    .then((json) => {
+      img.setAttribute("src", `${json.file}`)
+    })
+    .catch((err) => {
+      console.log(err);
+    })
+    .finally(() => {
+      console.log("That's it!");
+    });
+};
+
+const btn = document.getElementById("randomQ");
+
+
+btn.addEventListener("click", generateImg)
+
+
+
+
