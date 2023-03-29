@@ -8,5 +8,5 @@ This was created to practice fetch, Dates & DOM.
 ![Desktop preview](./desktop.gif)
 
 Mobile Preview
-![Mobile preview](./desktop.gif)
+![Mobile preview](./mobile.gif)
 
